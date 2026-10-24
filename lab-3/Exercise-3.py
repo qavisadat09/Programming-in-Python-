@@ -28,7 +28,7 @@ else:
 """
 #4
 
-
+"""
 v = ["a", "e", "i", "o", "u"]
 
 c = input("Enter a character: ")
@@ -37,7 +37,7 @@ if c.lower() in v:
     print("Vowel")
 else:
     print("Not a vowel")
-
+"""
 
 #5
 """
