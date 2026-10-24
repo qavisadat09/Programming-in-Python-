@@ -48,7 +48,18 @@ def display_report(students):
 
         print(student_id, name, round(average, 2), category)
 
+#testing
 display_report(students)
+
+print("Testing empty marks:")
+print(calculate_average([]))
+
+print("Testing invalid marks:")
+print(calculate_average([70, -5, 80]))
+
+print("Testing tied averages:")
+print(calculate_average([80, 80, 80]))
+
 """
 #Exercise-1
 """
