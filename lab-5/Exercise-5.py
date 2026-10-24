@@ -73,7 +73,7 @@ resources = [
 ]
 
 
-# 1. Display all resources
+#1. Display all resources
 def display_resources(resources):
     if len(resources) == 0:
         print("No resources available.")
@@ -87,7 +87,7 @@ def display_resources(resources):
       
 
 
-# 2. Search resources by category
+#2. Search resources by category
 def search_by_category(resources, category):
     found = False
 
@@ -100,7 +100,7 @@ def search_by_category(resources, category):
         print("No resources found in this category.")
 
 
-# 3. Find resources with zero available quantity
+#3. Find resources with zero available quantity
 def find_unavailable(resources):
     found = False
 
@@ -113,7 +113,7 @@ def find_unavailable(resources):
         print("All resources are available.")
 
 
-# Testing the functions
+# Testing 
 print("all resources")
 display_resources(resources)
 
