@@ -27,14 +27,18 @@ else:
    print("The number is odd")
 """
 #4
-"""
- c=input("Enter a character: ")
 
-if c.lower() in "aeiou" and len(ch) == 1:
-  print("Vowel")
+
+v = ["a", "e", "i", "o", "u"]
+
+c = input("Enter a character: ")
+
+if c.lower() in v:
+    print("Vowel")
 else:
- print("Not a vowel")
-"""
+    print("Not a vowel")
+
+
 #5
 """
 marks= float(input("Enter your marks: "))
