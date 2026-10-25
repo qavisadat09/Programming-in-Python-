@@ -31,7 +31,7 @@ for num in range(1, 1000):
 print(t)
 """
 #5
-
+"""
 def fibo(n):
    if n<= 1:
       return n
@@ -40,5 +40,5 @@ def fibo(n):
 N = int (input("Enter:"))
 for i in range(N):
     print (fibo(i))
-
+"""
 
