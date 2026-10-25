@@ -39,7 +39,7 @@ def display_report(students):
             print(student_id, name, "No Marks", category)
             continue
 
-        if any(mark < 0 or mark > 100 for mark in marks):
+        if mark < 0 or mark > 100:
             print(student_id, name, "Invalid Marks", "Not Classified")
             continue
 
