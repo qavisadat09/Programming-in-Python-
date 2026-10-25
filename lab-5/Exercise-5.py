@@ -68,7 +68,7 @@ print(calculate_average([80, 80, 80]))
 """
 #Exercise-1
 
-
+"""
 resources = [
     [101, "Laptop", "Electronics", 8],
     [102, "Projector", "Electronics", 0],
@@ -128,5 +128,5 @@ search_by_category(resources, "Audio")
 
 print("Unavailable")
 find_unavailable(resources)
-
+"""
 
