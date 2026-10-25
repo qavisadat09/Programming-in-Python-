@@ -40,7 +40,7 @@ else:
 """
 
 #5
-"""
+
 marks= float(input("Enter your marks: "))
 
 if marks < 0 or marks > 100:
@@ -63,4 +63,4 @@ elif marks >= 50:
     print("Grade: D")
 else:
     print("Grade: F")
-"""
+

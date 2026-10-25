@@ -14,24 +14,24 @@ while x>=0:
 """
 #3
 """
-base= 2
-power = 2
+base= 3
+power = 3
 result = 1
 for i in range(power):
     result= result*base
     print (result)
-    """
+   """ 
 #4
 """
 t= 0
 for num in range(1, 1000):
     if num % 1==0 and num %num==0:
         t = t +num
-        break
+        continue
 print(t)
 """
 #5
-"""
+
 def fibo(n):
    if n<= 1:
       return n
@@ -40,5 +40,5 @@ def fibo(n):
 N = int (input("Enter:"))
 for i in range(N):
     print (fibo(i))
-""" 
+
 

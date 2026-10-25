@@ -13,6 +13,10 @@ def calculate_average(marks):
     if len(marks) == 0:
         return None
 
+    for mark in marks:
+        if mark < 0 or mark > 100:
+            return "Invalid Marks"
+
     return sum(marks) / len(marks)
 #2
 def classify_performance(average):
@@ -39,11 +43,12 @@ def display_report(students):
             print(student_id, name, "No Marks", category)
             continue
 
-        if mark < 0 or mark > 100:
+        average = calculate_average(marks)
+
+        if average == "Invalid Marks":
             print(student_id, name, "Invalid Marks", "Not Classified")
             continue
 
-        average = calculate_average(marks)
         category = classify_performance(average)
 
         print(student_id, name, round(average, 2), category)
@@ -62,7 +67,7 @@ print(calculate_average([80, 80, 80]))
 
 """
 #Exercise-1
-"""
+
 
 resources = [
     [101, "Laptop", "Electronics", 8],
@@ -101,6 +106,7 @@ def search_by_category(resources, category):
 
 
 #3. Find resources with zero available quantity
+
 def find_unavailable(resources):
     found = False
 
@@ -117,10 +123,10 @@ def find_unavailable(resources):
 print("all resources")
 display_resources(resources)
 
-print("electronic resource")
-search_by_category(resources, "Electronics")
+print("Audio resource")
+search_by_category(resources, "Audio")
 
 print("Unavailable")
 find_unavailable(resources)
-"""
+
 
